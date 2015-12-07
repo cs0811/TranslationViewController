@@ -29,13 +29,13 @@
     _fourth = [[FourthVC alloc] init];
     
     STranslationVC * translation = [[STranslationVC alloc] init];
-    UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:translation];
-    self.window.rootViewController = nav;
-    
     // 配置属性
     translation.titleArray = @[@"第一个",@"第二个",@"第三个",@"第四个",@"第五个",@"第六个",@"第七个"];    // 当标题数多于视图数时，多余的标题不会被响应
     translation.translationViewControllers = @[_second,_third,_fourth];
     translation.firstViewController = _second;
+    
+    UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:translation];
+    self.window.rootViewController = nav;
         
     return YES;
 }

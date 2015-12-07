@@ -8,4 +8,4 @@
     translation.translationViewControllers = @[_second,_third,_fourth];
     translation.firstViewController = _second;
 
-![image](https://github.com/cs0811/SRefresh/blob/master/SRefreshGif.gif) 
+![image](https://github.com/cs0811/TranslationViewController/blob/master/TranslationVCGif.gif) 
